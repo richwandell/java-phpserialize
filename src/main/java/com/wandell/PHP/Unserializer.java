@@ -5,13 +5,15 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Type;
 import java.util.*;
 
+/**
+ * @author Rich Wandell
+ */
 @SuppressWarnings("Duplicates")
 public class Unserializer {
 
     private Class<?>[] classes;
 
     private int index = 0;
-    private boolean hasReferences = false;
 
     public Unserializer() {
         super();
@@ -142,24 +144,6 @@ public class Unserializer {
             }
         }
         return realKey;
-    }
-
-    private static class PropertiesReference {
-        private int refNum;
-        private String key;
-
-        public PropertiesReference(int refNum, String key) {
-            this.refNum = refNum;
-            this.key = key;
-        }
-
-        public int getRefNum() {
-            return refNum;
-        }
-
-        public String getKey() {
-            return key;
-        }
     }
 
     public LinkedHashMap<String, Object> getObjectProperties(String data) throws Exception.POJORequiresEmptyConstructorException {
