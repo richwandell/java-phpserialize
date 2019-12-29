@@ -1,7 +1,8 @@
 package com.wandell.PHP;
 
 class PropertiesReference {
-    private int intKey;
+    private String fieldName;
+    private String fieldValue;
     private int refNum;
     private String key;
 
@@ -10,8 +11,9 @@ class PropertiesReference {
         this.key = key;
     }
 
-    public PropertiesReference(int refNum) {
-        this.refNum = refNum;
+    public PropertiesReference(String fieldName, String fieldValue) {
+        this.fieldName = fieldName;
+        this.fieldValue = fieldValue;
     }
 
     public int getRefNum() {
@@ -22,7 +24,11 @@ class PropertiesReference {
         return key;
     }
 
-    public int getIntKey() {
-        return intKey;
+    public String getFieldValue() {
+        return fieldValue;
+    }
+
+    public String getFieldName() {
+        return fieldName;
     }
 }
