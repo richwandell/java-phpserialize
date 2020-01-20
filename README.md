@@ -3,6 +3,12 @@ PHP Serialize is a library that can serialize Java POJO's into PHP POPO's as wel
 java POJO's. The spec used for this project was taken from [PHP Internals Book]. Unit tests are not 
 comprehensive but I did try to cover a lot of use cases. 
 
+<p align="center">
+  <a href="https://travis-ci.org/richwandell/java-phpserialize"><img src="https://img.shields.io/travis/richwandell/java-phpserialize/master.svg" alt="Build status" /></a>
+  <a href="https://coveralls.io/github/richwandell/java-phpserialize?branch=master"><img src="https://img.shields.io/coveralls/github/richwandell/java-phpserialize/master" alt="Code coverage" /></a>
+  <!--<a href="https://scrutinizer-ci.com/g/wandell/multiprocessing/?branch=master"><img src="https://scrutinizer-ci.com/g/wandell/multiprocessing/badges/quality-score.png?b=master" /></a>-->
+</p>
+
 ## Usage
 In order for Java POJO's and PHP POPO's to work via the PHP serialization mechanism, we first need to make 
 sure that the PHP class and the Java class are compatible with one another. The following example shows a PHP class 
